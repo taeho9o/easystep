@@ -9,7 +9,7 @@
 import UIKit
 
 
-class InputEmailViewController: UIViewController {
+class InputEmailViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var inputEmail: UITextField!
     @IBOutlet weak var sendCertifyEmail: UIButton!
@@ -44,14 +44,14 @@ class InputEmailViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
 
-    /*
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        let destination = segue.destination as! InputNameViewController
+        destination.paramEmail = inputEmail.text
     }
-    */
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        inputEmail.resignFirstResponder()
+    }
 
 }

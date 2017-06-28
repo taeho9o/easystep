@@ -11,11 +11,11 @@
 		765185201F028591009E8CB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7651851F1F028591009E8CB7 /* AppDelegate.swift */; };
 		765185221F028591009E8CB7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765185211F028591009E8CB7 /* ViewController.swift */; };
 		765185251F028591009E8CB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 765185231F028591009E8CB7 /* Main.storyboard */; };
-		765185281F028591009E8CB7 /* EASYSTEP.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 765185261F028591009E8CB7 /* EASYSTEP.xcdatamodeld */; };
 		7651852A1F028591009E8CB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 765185291F028591009E8CB7 /* Assets.xcassets */; };
-		765185391F0288CC009E8CB7 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 765185381F0288CC009E8CB7 /* Launch Screen.storyboard */; };
 		7651853F1F029327009E8CB7 /* SignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7651853E1F029327009E8CB7 /* SignViewController.swift */; };
 		765185431F02AAC8009E8CB7 /* InputEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765185421F02AAC8009E8CB7 /* InputEmailViewController.swift */; };
+		7653C1161F03E7FF00F8488B /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7653C1151F03E7FF00F8488B /* Launch Screen.storyboard */; };
+		7653C1181F03EA5400F8488B /* ConfirmAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7653C1171F03EA5400F8488B /* ConfirmAccountViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,12 +24,12 @@
 		7651851F1F028591009E8CB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		765185211F028591009E8CB7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		765185241F028591009E8CB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		765185271F028591009E8CB7 /* EASYSTEP.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EASYSTEP.xcdatamodel; sourceTree = "<group>"; };
 		765185291F028591009E8CB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7651852E1F028591009E8CB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		765185381F0288CC009E8CB7 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		7651853E1F029327009E8CB7 /* SignViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignViewController.swift; sourceTree = "<group>"; };
 		765185421F02AAC8009E8CB7 /* InputEmailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputEmailViewController.swift; sourceTree = "<group>"; };
+		7653C1151F03E7FF00F8488B /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		7653C1171F03EA5400F8488B /* ConfirmAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmAccountViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +46,7 @@
 		765185131F028591009E8CB7 = {
 			isa = PBXGroup;
 			children = (
+				7653C1151F03E7FF00F8488B /* Launch Screen.storyboard */,
 				7651851E1F028591009E8CB7 /* EASYSTEP */,
 				7651851D1F028591009E8CB7 /* Products */,
 			);
@@ -65,13 +66,12 @@
 				7651851F1F028591009E8CB7 /* AppDelegate.swift */,
 				765185421F02AAC8009E8CB7 /* InputEmailViewController.swift */,
 				7642D48F1F02CA75003C5BB1 /* InputNameViewController.swift */,
+				7653C1171F03EA5400F8488B /* ConfirmAccountViewController.swift */,
 				765185211F028591009E8CB7 /* ViewController.swift */,
 				765185231F028591009E8CB7 /* Main.storyboard */,
 				7651853E1F029327009E8CB7 /* SignViewController.swift */,
 				765185291F028591009E8CB7 /* Assets.xcassets */,
 				7651852E1F028591009E8CB7 /* Info.plist */,
-				765185261F028591009E8CB7 /* EASYSTEP.xcdatamodeld */,
-				765185381F0288CC009E8CB7 /* Launch Screen.storyboard */,
 			);
 			path = EASYSTEP;
 			sourceTree = "<group>";
@@ -136,8 +136,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7653C1161F03E7FF00F8488B /* Launch Screen.storyboard in Resources */,
 				7651852A1F028591009E8CB7 /* Assets.xcassets in Resources */,
-				765185391F0288CC009E8CB7 /* Launch Screen.storyboard in Resources */,
 				765185251F028591009E8CB7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -152,7 +152,7 @@
 				7642D4901F02CA75003C5BB1 /* InputNameViewController.swift in Sources */,
 				765185221F028591009E8CB7 /* ViewController.swift in Sources */,
 				765185201F028591009E8CB7 /* AppDelegate.swift in Sources */,
-				765185281F028591009E8CB7 /* EASYSTEP.xcdatamodeld in Sources */,
+				7653C1181F03EA5400F8488B /* ConfirmAccountViewController.swift in Sources */,
 				7651853F1F029327009E8CB7 /* SignViewController.swift in Sources */,
 				765185431F02AAC8009E8CB7 /* InputEmailViewController.swift in Sources */,
 			);
@@ -315,19 +315,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		765185261F028591009E8CB7 /* EASYSTEP.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				765185271F028591009E8CB7 /* EASYSTEP.xcdatamodel */,
-			);
-			currentVersion = 765185271F028591009E8CB7 /* EASYSTEP.xcdatamodel */;
-			path = EASYSTEP.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 765185141F028591009E8CB7 /* Project object */;
 }

@@ -13,6 +13,7 @@ class InputNameViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var nameDescription: UILabel!
     @IBOutlet weak var goConfirm: UIButton!
+    var paramEmail: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,8 +30,9 @@ class InputNameViewController: UIViewController, UITextFieldDelegate {
         passwordField.returnKeyType = UIReturnKeyType.done
         passwordField.isSecureTextEntry = true
 
-        nameDescription.text = "이름, 비밀번호 입력"
-        
+//        nameDescription.text = "이름, 비밀번호 입력"
+        nameDescription.text = paramEmail
+
         
         //확인 화면으로 이동
         goConfirm.setTitle("NEXT", for: .normal)
@@ -46,9 +48,15 @@ class InputNameViewController: UIViewController, UITextFieldDelegate {
         _ = self.navigationController?.popViewController(animated: true)
         
     }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        nameField.resignFirstResponder()
+        passwordField.resignFirstResponder()
     }
     
     //다음 textfield로 커서이동

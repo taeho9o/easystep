@@ -69,6 +69,10 @@ class SignViewController: UIViewController, UITextFieldDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        emailField.resignFirstResponder()
+        passwordField.resignFirstResponder()
+    }
     
     //다음 textfield로 커서이동
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
