@@ -18,8 +18,7 @@ extension UITextField {
         border.backgroundColor = color.cgColor
         self.layer.addSublayer(border)
     }
-    
-    
+        
 }
 
 class SignViewController: UIViewController, UITextFieldDelegate {
@@ -29,6 +28,8 @@ class SignViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var goRegister: UIButton!
     
+    let whiteColor : UIColor = UIColor.white
+
     let yourAttributes : [String: Any] = [
         NSFontAttributeName : UIFont.systemFont(ofSize: 20),
         NSUnderlineStyleAttributeName : NSUnderlineStyle.styleSingle.rawValue]
@@ -38,16 +39,22 @@ class SignViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         
         
+        
         //email 입력
         emailField.font = UIFont.systemFont(ofSize: 25)
         emailField.placeholder = "email"
-        emailField.addBorderBottom(height: 1.5, color: self.view.tintColor)
+        emailField.layer.borderColor = whiteColor.cgColor
+        emailField.layer.borderWidth = 1
+
+        //emailField.addBorderBottom(height: 1.5, color: self.view.tintColor)
         emailField.keyboardType = UIKeyboardType.asciiCapable
         
         //password 입력
         passwordField.font = UIFont.systemFont(ofSize: 25)
         passwordField.placeholder = "password"
-        passwordField.addBorderBottom(height: 1.5, color: self.view.tintColor)
+        passwordField.layer.borderColor = whiteColor.cgColor
+        passwordField.layer.borderWidth = 1
+        //passwordField.addBorderBottom(height: 1.5, color: self.view.tintColor)
         passwordField.returnKeyType = UIReturnKeyType.done
         passwordField.isSecureTextEntry = true
 

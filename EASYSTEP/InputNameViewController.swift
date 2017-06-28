@@ -15,23 +15,31 @@ class InputNameViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var goConfirm: UIButton!
     var paramEmail: String?
     
+    let whiteColor : UIColor = UIColor.white
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+        
+        
         //name 입력
         nameField.font = UIFont.systemFont(ofSize: 25)
         nameField.placeholder = "name"
-        nameField.addBorderBottom(height: 1.5, color: self.view.tintColor)
+        nameField.layer.borderColor = whiteColor.cgColor
+        nameField.layer.borderWidth = 1
+        //nameField.addBorderBottom(height: 1.5, color: self.view.tintColor)
         
         //password 입력
         passwordField.font = UIFont.systemFont(ofSize: 25)
         passwordField.placeholder = "password"
-        passwordField.addBorderBottom(height: 1.5, color: self.view.tintColor)
+        passwordField.layer.borderColor = whiteColor.cgColor
+        passwordField.layer.borderWidth = 1
+        //passwordField.addBorderBottom(height: 3, color: self.view.tintColor)
         passwordField.returnKeyType = UIReturnKeyType.done
         passwordField.isSecureTextEntry = true
 
-//        nameDescription.text = "이름, 비밀번호 입력"
-        nameDescription.text = paramEmail
+        nameDescription.text = "이름, 비밀번호 입력"
 
         
         //확인 화면으로 이동
@@ -70,14 +78,10 @@ class InputNameViewController: UIViewController, UITextFieldDelegate {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        let destination = segue.destination as! ConfirmAccountViewController
+        destination.paramEmail = paramEmail
+        destination.paramName = nameField.text
     }
-    */
 
 }

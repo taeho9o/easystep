@@ -16,6 +16,7 @@
 		765185431F02AAC8009E8CB7 /* InputEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765185421F02AAC8009E8CB7 /* InputEmailViewController.swift */; };
 		7653C1161F03E7FF00F8488B /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7653C1151F03E7FF00F8488B /* Launch Screen.storyboard */; };
 		7653C1181F03EA5400F8488B /* ConfirmAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7653C1171F03EA5400F8488B /* ConfirmAccountViewController.swift */; };
+		76C0DA801F041F09005D0F86 /* SearchAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C0DA7F1F041F09005D0F86 /* SearchAccountViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		765185421F02AAC8009E8CB7 /* InputEmailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputEmailViewController.swift; sourceTree = "<group>"; };
 		7653C1151F03E7FF00F8488B /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		7653C1171F03EA5400F8488B /* ConfirmAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmAccountViewController.swift; sourceTree = "<group>"; };
+		76C0DA7F1F041F09005D0F86 /* SearchAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchAccountViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				7651851F1F028591009E8CB7 /* AppDelegate.swift */,
 				765185421F02AAC8009E8CB7 /* InputEmailViewController.swift */,
 				7642D48F1F02CA75003C5BB1 /* InputNameViewController.swift */,
+				76C0DA7F1F041F09005D0F86 /* SearchAccountViewController.swift */,
 				7653C1171F03EA5400F8488B /* ConfirmAccountViewController.swift */,
 				765185211F028591009E8CB7 /* ViewController.swift */,
 				765185231F028591009E8CB7 /* Main.storyboard */,
@@ -153,6 +156,7 @@
 				765185221F028591009E8CB7 /* ViewController.swift in Sources */,
 				765185201F028591009E8CB7 /* AppDelegate.swift in Sources */,
 				7653C1181F03EA5400F8488B /* ConfirmAccountViewController.swift in Sources */,
+				76C0DA801F041F09005D0F86 /* SearchAccountViewController.swift in Sources */,
 				7651853F1F029327009E8CB7 /* SignViewController.swift in Sources */,
 				765185431F02AAC8009E8CB7 /* InputEmailViewController.swift in Sources */,
 			);
